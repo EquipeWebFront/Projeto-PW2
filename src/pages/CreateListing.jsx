@@ -235,7 +235,7 @@ export default function CreateListing() {
             />
           </div>
           <div>
-            <p className="text-lg font-semibold">Banehiros</p>
+            <p className="text-lg font-semibold">Banheiros</p>
             <input
               type="number"
               id="bathrooms"
@@ -348,7 +348,7 @@ export default function CreateListing() {
           required
           className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 mb-6"
         />
-        <p className="text-lg font-semibold">Offer</p>
+        <p className="text-lg font-semibold">Oferta</p>
         <div className="flex mb-6">
           <button
             type="button"
@@ -413,7 +413,7 @@ export default function CreateListing() {
                 {type === "rent" && (
                   <div className="">
                     <p className="text-md w-full whitespace-nowrap">
-                      $ / Month
+                      $ / Mês
                     </p>
                   </div>
                 )}
