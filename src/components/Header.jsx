@@ -25,9 +25,9 @@ export default function Header() {
       <header className="flex justify-between items-center px-3 max-w-6xl mx-auto">
         <div>
           <img
-            src="https://static.rdc.moveaws.com/images/logos/rdc-logo-default.svg"
+            src="https://trello.com/1/cards/64238aa6aa22ffb6b9281673/attachments/6459337057be549520c1b736/previews/6459337157be549520c1b741/download/seular.png"
             alt="logo"
-            className="h-5 cursor-pointer"
+            className="h-10 cursor-pointer"
             onClick={() => navigate("/")}
           />
         </div>
