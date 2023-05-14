@@ -273,7 +273,7 @@ export default function CreateListing() {
             Não
           </button>
         </div>
-        <p className="text-lg mt-6 font-semibold">Furnished</p>
+        <p className="text-lg mt-6 font-semibold">Mobiliada</p>
         <div className="flex">
           <button
             type="button"
@@ -304,7 +304,7 @@ export default function CreateListing() {
           id="address"
           value={address}
           onChange={onChange}
-          placeholder="Address"
+          placeholder="Endereço"
           required
           className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 mb-6"
         />
@@ -344,7 +344,7 @@ export default function CreateListing() {
           id="description"
           value={description}
           onChange={onChange}
-          placeholder="Description"
+          placeholder="Descrição"
           required
           className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 mb-6"
         />
