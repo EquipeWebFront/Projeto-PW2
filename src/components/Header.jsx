@@ -56,7 +56,7 @@ export default function Header() {
               }`}
               onClick={() => navigate("/profile")}
             >
-              {pageState}
+              Perfil
             </li>
           </ul>
         </div>
