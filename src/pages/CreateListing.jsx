@@ -214,7 +214,7 @@ export default function CreateListing() {
           id="name"
           value={name}
           onChange={onChange}
-          placeholder="Name"
+          placeholder="Nome"
           maxLength="32"
           minLength="10"
           required

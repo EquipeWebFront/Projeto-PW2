@@ -47,10 +47,10 @@ export default function SignUp() {
       formDataCopy.timestamp = serverTimestamp();
 
       await setDoc(doc(db, "users", user.uid), formDataCopy);
-      // toast.success("Sign up was successful");
-      // navigate("/");
+       toast.success("Sign up was successful");
+       navigate("/");
     } catch (error) {
-      toast.error("Something went wrong with the registration");
+      toast.error("Algo deu errado com o registro");
     }
   }
   return (
@@ -79,7 +79,7 @@ export default function SignUp() {
               id="email"
               value={email}
               onChange={onChange}
-              placeholder="Email address"
+              placeholder="Email"
               className="mb-6 w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out"
             />
             <div className="relative mb-6">
@@ -88,7 +88,7 @@ export default function SignUp() {
                 id="password"
                 value={password}
                 onChange={onChange}
-                placeholder="Password"
+                placeholder="Senha"
                 className="w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out"
               />
               {showPassword ? (

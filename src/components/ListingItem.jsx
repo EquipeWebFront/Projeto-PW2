@@ -35,19 +35,19 @@ export default function ListingItem({ listing, id, onEdit, onDelete }) {
               : listing.regularPrice
                   .toString()
                   .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-            {listing.type === "rent" && " / month"}
+            {listing.type === "rent" && " / mês"}
           </p>
           <div className="flex items-center mt-[10px] space-x-3">
             <div className="flex items-center space-x-1">
               <p className="font-bold text-xs">
-                {listing.bedrooms > 1 ? `${listing.bedrooms} Beds` : "1 Bed"}
+                {listing.bedrooms > 1 ? `${listing.bedrooms} Quartos` : "1 Quarto"}
               </p>
             </div>
             <div className="flex items-center space-x-1">
               <p className="font-bold text-xs">
                 {listing.bathrooms > 1
-                  ? `${listing.bathrooms} Baths`
-                  : "1 Bath"}
+                  ? `${listing.bathrooms} Banheiros`
+                  : "1 Banheiros"}
               </p>
             </div>
           </div>

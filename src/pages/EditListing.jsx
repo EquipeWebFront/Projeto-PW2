@@ -114,12 +114,12 @@ export default function CreateListing() {
     setLoading(true);
     if (+discountedPrice >= +regularPrice) {
       setLoading(false);
-      toast.error("Discounted price needs to be less than regular price");
+      toast.error("Desconto deve ser menor que o preço original");
       return;
     }
     if (images.length > 6) {
       setLoading(false);
-      toast.error("maximum 6 images are allowed");
+      toast.error("Máximo de 6 imagens");
       return;
     }
     let geolocation = {};
@@ -137,7 +137,7 @@ export default function CreateListing() {
 
       if (location === undefined) {
         setLoading(false);
-        toast.error("please enter a correct address");
+        toast.error("Por gentileza, coloque um endereço aceito");
         return;
       }
     } else {
@@ -158,13 +158,13 @@ export default function CreateListing() {
             // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
             const progress =
               (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-            console.log("Upload is " + progress + "% done");
+            console.log("Upload está " + progress + "% feito");
             switch (snapshot.state) {
               case "paused":
-                console.log("Upload is paused");
+                console.log("Upload está pausado");
                 break;
               case "running":
-                console.log("Upload is running");
+                console.log("Upload está rodando");
                 break;
             }
           },
@@ -187,7 +187,7 @@ export default function CreateListing() {
       [...images].map((image) => storeImage(image))
     ).catch((error) => {
       setLoading(false);
-      toast.error("Images not uploaded");
+      toast.error("Imagens não foram enviadas");
       return;
     });
 
@@ -206,7 +206,7 @@ export default function CreateListing() {
 
     await updateDoc(docRef, formDataCopy);
     setLoading(false);
-    toast.success("Listing Edited");
+    toast.success("Listagem Editada");
     navigate(`/category/${formDataCopy.type}/${docRef.id}`);
   }
 

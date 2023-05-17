@@ -32,7 +32,7 @@ export default function SignIn() {
         navigate("/");
       }
     } catch (error) {
-      toast.error("Bad user credentials");
+      toast.error("Credenciais não encontradas");
     }
   }
   return (
@@ -53,7 +53,7 @@ export default function SignIn() {
               id="email"
               value={email}
               onChange={onChange}
-              placeholder="Email address"
+              placeholder="E-mail"
               className="mb-6 w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out"
             />
             <div className="relative mb-6">
@@ -62,7 +62,7 @@ export default function SignIn() {
                 id="password"
                 value={password}
                 onChange={onChange}
-                placeholder="Password"
+                placeholder="Senha"
                 className="w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out"
               />
               {showPassword ? (
